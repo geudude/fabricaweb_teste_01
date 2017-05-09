@@ -11,6 +11,12 @@ public class ConexaoFactory {
 		
 		//retorna o link pro banco/nomedobanco, usuario, senha
 		try {
+			try {
+				Class.forName("org.postgresql.Driver");
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			return DriverManager.getConnection("jdbc:postgresql://localhost:5432/fabricaweb","postgres","fn88pcds");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
