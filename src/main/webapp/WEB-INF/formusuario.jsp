@@ -9,6 +9,8 @@
 <title>Cadastro de usuário</title>
 </head>
 <body>
+<%@include file="menu.jsp"
+ %>
 	<%
 	Usuario u = request.getAtttribute("usuario");
 	%>

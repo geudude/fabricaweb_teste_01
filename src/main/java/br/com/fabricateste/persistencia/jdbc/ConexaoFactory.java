@@ -17,7 +17,7 @@ public class ConexaoFactory {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			return DriverManager.getConnection("jdbc:postgresql://localhost:5432/fabricaweb","postgres","fn88pcds");
+			return DriverManager.getConnection("jdbc:postgresql://localhost:5432/fabricaweb","login","senha");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			//relancando a exception
